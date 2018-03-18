@@ -12,7 +12,8 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "vault:token": "a410cdad-ad87-227f-d24c-3ff4e8c92ad8"
       }
     },
     "VaultTest": {
