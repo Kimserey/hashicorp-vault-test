@@ -14,7 +14,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "vault:roleid": "2fbc9478-c4fe-6343-792b-5ac1642fb05c",
-        "vault:secretid": "f1a9e55a-7d81-c8c1-14d3-b5143c8deef2"
+        "vault:secretid": "a24d93f0-c8b0-f1b3-3dd9-94510862dd01"
       }
     },
     "VaultTest": {

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,6 +17,7 @@ namespace VaultTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.Configure<VaultSecrets>(_configuration.GetSection("vault"));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -27,7 +27,7 @@ namespace VaultTest
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
