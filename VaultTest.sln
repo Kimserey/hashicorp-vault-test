@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaultTest", "VaultTest\VaultTest.csproj", "{1494AA5B-A322-475C-B00B-08A67D5EFFEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaultTest", "VaultTest\VaultTest.csproj", "{1494AA5B-A322-475C-B00B-08A67D5EFFEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

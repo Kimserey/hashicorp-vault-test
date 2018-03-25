@@ -13,7 +13,8 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "vault:token": "a410cdad-ad87-227f-d24c-3ff4e8c92ad8"
+        "vault:roleid": "2fbc9478-c4fe-6343-792b-5ac1642fb05c",
+        "vault:secretid": "f1a9e55a-7d81-c8c1-14d3-b5143c8deef2"
       }
     },
     "VaultTest": {
