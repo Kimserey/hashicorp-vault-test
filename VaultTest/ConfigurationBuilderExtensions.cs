@@ -27,7 +27,7 @@ namespace VaultTest
 
                     var vaultSecrets = vaultClient
                             .ReadSecretAsync(buildConfig["vault:path"])
-                            .Result.Data.Select(x => new KeyValuePair<string, string>(x.Key, x.Value.ToString()));
+                            .Result.Data.Select(x => new KeyValuePair<string, string>($"vault:{x.Key}", x.Value.ToString()));
 
                     return builder.AddInMemoryCollection(vaultSecrets);
                 }
