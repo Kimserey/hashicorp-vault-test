@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5065282-B8F3-4E34-9CB1-2A3E763C2CB9}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.build.props = Directory.build.props
+		release.ps1 = release.ps1
 	EndProjectSection
 EndProject
 Global
