@@ -3,8 +3,8 @@ using Microsoft.Extensions.Options;
 
 namespace VaultTest.Controllers
 {
-    [Route("Home")]
-    public class HomeController: Controller
+    [Route("Secrets")]
+    public class SecretsController: Controller
     {
         [HttpGet]
         public IActionResult Get([FromServices] IOptions<VaultSecrets> secrets)
