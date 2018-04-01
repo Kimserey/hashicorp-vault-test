@@ -5,4 +5,4 @@ $props.Save(".\Directory.build.props")
 git add .
 git commit -m "bump version"
 git tag $version
-git push
+git push origin $version --porcelain
