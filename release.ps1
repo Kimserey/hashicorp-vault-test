@@ -1,18 +1,18 @@
 # Get the version from master branch by running gitversion.
-# Make sure Gitversion is registered in PATH.
+# Make sure Gitversion is registered in PATH!
 
 $version = gitversion /showvariable semver
 
-# Update Directory Build Properties version in root.
-# Version Property dictate all versions of all *.dlls.
+# Update Directory.build.props version <version></version>.
+# It dictates all *.dll versions.
 
 $propsPath = ".\Directory.build.props"
 [xml]$props = Get-Content $propsPath
 $props.Project.PropertyGroup.Version = "$version"
 $props.Save($propsPath)
 
-# Commit Bump version
-# And tag commit
+# Commit bump version and tag commit.
+# Then push the newly tagged commit to origin.
 
 git add $propsPath
 git commit -m "Bump version for release"
